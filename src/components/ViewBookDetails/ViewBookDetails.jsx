@@ -133,9 +133,13 @@ function ViewBookDetails() {
   }
 
   const deleteBox=async()=>{
-    const response=await axios.delete("http://localhost:3000/delete-book",{headers})
-    alert(response.data.message)
-    navigate('/all-books')
+    let a=confirm("Do you want delete book Confirm")
+    if(a){
+
+      const response=await axios.delete("http://localhost:3000/delete-book",{headers})
+      alert(response.data.message)
+      navigate('/all-books')
+    }
   }
   return (
     <>

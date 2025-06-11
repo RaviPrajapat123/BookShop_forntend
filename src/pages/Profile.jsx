@@ -22,7 +22,7 @@ const [profile ,setProfile]=useState()
   }, [])
   
   return (
-    <div className='bg-zinc-900 px-2 md:px-12 flex flex-col md:flex-row py-8 gap-4 text-white'>
+    <div className='bg-zinc-900 px-2 md:px-12 flex flex-col lg:flex-row py-8 gap-4 text-white'>
      {!profile && 
       <div className="w-full h-screen flex items-center justify-center">
      <Loader/>
@@ -30,7 +30,7 @@ const [profile ,setProfile]=useState()
      }
       {profile && (
          <>
-      <div className='w-full md:w-1/6 h-auto  lg:h-screen'>
+      <div className='w-full lg:w-1/6 h-auto  lg:h-screen'>
       <SideBar data={profile}/>
       <MobileNav/>
       </div>
