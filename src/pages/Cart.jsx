@@ -210,7 +210,7 @@ function Cart() {
 
                 <div className="flex-1 px-0 lg:px-6 py-4 lg:py-0">
                   <h2 className="text-xl font-semibold text-zinc-100 mb-2">{item.title}</h2>
-                  <p className="text-zinc-400 text-sm">{item.desc.slice(0, 120)}...</p>
+                  <p className="text-zinc-400 text-sm">{item.desc.slice(0, 120)}</p>
                   <div className="mt-4 flex items-center justify-between">
                     <span className="text-lg font-semibold text-white">₹ {item.price}</span>
                     <button

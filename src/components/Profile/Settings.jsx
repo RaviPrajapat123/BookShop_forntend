@@ -63,7 +63,7 @@ function Settings() {
               ></textarea>
             </div>
             <div className='mt-4 flex justify-end'>
-              <button className='bg-yellow-500 text-zinc-900 font-semibold px-3 py-2 rounded hover:bg-yellow-400 transition-all duration-300' onClick={submitAddress}>Updata</button>
+              <button className='bg-yellow-500 text-zinc-900 font-semibold px-3 py-2 rounded hover:bg-yellow-400 transition-all duration-300' onClick={submitAddress}>Update</button>
             </div>
         </div>
       )
