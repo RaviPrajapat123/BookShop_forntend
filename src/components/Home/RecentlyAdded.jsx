@@ -41,7 +41,6 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import BookCard from '../BookCard/BookCard';
 import Loader from '../Loader/Loader';
-import.meta.env.VITE_API_URL
 
 function RecentlyAdded() {
   const [data, setData] = useState(null);
@@ -50,7 +49,7 @@ function RecentlyAdded() {
   useEffect(() => {
     const fetch = async () => {
       try {
-        const response = await axios.get(`${import.meta.env.VITE_API_URL}/get-recent-books`);
+        const response = await axios.get("http://localhost:3000/get-recent-books");
         setData(response.data.data);
         setLoading(false);
       } catch (err) {
