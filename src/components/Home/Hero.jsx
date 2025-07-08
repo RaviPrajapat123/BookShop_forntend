@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 function Hero() {
   return (
-    <div className='min-h-[75vh] bg-gradient-to-r from-zinc-900 to-zinc-800 px-6 lg:px-24 flex flex-col md:flex-row items-center justify-between'>
+    <div className='min-h-[75vh] md:bg-gradient-to-r from-zinc-900 to-zinc-800 px-6 lg:px-24 flex flex-col md:flex-row items-center justify-between'>
       
       {/* Left Section */}
       <div className='w-full lg:w-1/2 flex flex-col items-center lg:items-start text-center lg:text-left'>
